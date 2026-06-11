@@ -1,0 +1,44 @@
+# Project Configuration
+project:
+  name: "E-Commerce AI Analytics"
+  version: "1.0.0"
+  author: "Your Name"
+
+data:
+  n_records: 10000
+  random_seed: 42
+  raw_path: "data/ecommerce_raw.csv"
+  clean_path: "data/ecommerce_clean.csv"
+  date_start: "2023-01-01"
+  date_end: "2024-12-31"
+
+ml:
+  churn:
+    threshold_days: 90
+    test_size: 0.2
+    n_estimators: 200
+    max_depth: 10
+  
+  segmentation:
+    n_clusters: 5
+    random_state: 42
+  
+  forecast:
+    periods: 30
+    seasonality_mode: "multiplicative"
+    changepoint_prior_scale: 0.05
+
+nlp:
+  use_bert: false
+  bert_model: "distilbert-base-uncased-finetuned-sst-2-english"
+  max_tokens: 512
+
+ai:
+  use_openai: false
+  model: "gpt-3.5-turbo"
+  temperature: 0.7
+  max_tokens: 500
+
+dashboard:
+  port: 8501
+  theme: "light"
