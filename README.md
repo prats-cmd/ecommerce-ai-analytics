@@ -10,7 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-Passing-44BBA4?style=for-the-badge)](tests/)
 
-**[📊 Live Dashboard](https://ecommerce-ai-analytics.streamlit.app) · [📄 View Report](reports/ai_executive_report.md) · [🎥 Demo Video](#)**
+**[📊 Live Dashboard](https://ecommerce-ai-analytics-9viivtzybuc6txle2e4ez8.streamlit.app) · [📄 View Report](reports/ai_executive_report.md) · [🎥 Demo Video](#)**
 
 </div>
 
