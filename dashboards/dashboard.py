@@ -53,12 +53,13 @@ def load_data():
     data = {}
     
     # Main cleaned data
-    if os.path.exists('data/ecommerce_clean.csv'):
-        data['main'] = pd.read_csv('data/ecommerce_clean.csv')
-        data['main']['order_date'] = pd.to_datetime(data['main']['order_date'])
-    else:
-        st.error("⚠️ data/ecommerce_clean.csv not found! Run: python scripts/run_pipeline.py")
-        st.stop()
+    if not os.path.exists('data/ecommerce_clean.csv'):
+        with st.spinner("🚀 Initializing data and running ML pipeline (first-time deployment)..."):
+            from scripts.run_pipeline import run_full_pipeline
+            run_full_pipeline()
+
+    data['main'] = pd.read_csv('data/ecommerce_clean.csv')
+    data['main']['order_date'] = pd.to_datetime(data['main']['order_date'])
     
     # Optional ML outputs
     optional_files = {
