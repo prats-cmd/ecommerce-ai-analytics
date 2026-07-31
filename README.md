@@ -379,13 +379,13 @@ ecommerce-ai-analytics/
 ## ⚡ Installation & Setup
 
 ### Prerequisites
-- Python 3.10+
+- Python 3.10+ (tested on 3.12)
 - Git
 
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/ecommerce-ai-analytics.git
+git clone https://github.com/prats-cmd/ecommerce-ai-analytics.git
 cd ecommerce-ai-analytics
 ```
 
@@ -637,10 +637,10 @@ This project is licensed under the **MIT License**.
 
 ## 👤 Author
 
-**[Your Name]**
+**prats-cmd**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/yourusername)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/prats-cmd)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail)](mailto:your@email.com)
 
 ---

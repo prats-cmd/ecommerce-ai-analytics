@@ -22,8 +22,9 @@ except ImportError:
 try:
     from transformers import pipeline as hf_pipeline
     BERT_AVAILABLE = True
-except ImportError:
+except (ImportError, OSError):
     BERT_AVAILABLE = False
+    logger.warning("Transformers/PyTorch not available. BERT mode disabled.")
 
 
 class SentimentAnalyzer:
@@ -156,7 +157,7 @@ class SentimentAnalyzer:
         # Rating vs Sentiment
         axes[1, 1].boxplot(
             [df[df["customer_rating"] == r]["sentiment_score"].values for r in range(1, 6)],
-            labels=["1★", "2★", "3★", "4★", "5★"]
+            tick_labels=["1★", "2★", "3★", "4★", "5★"]
         )
         axes[1, 1].set_title("Sentiment Score vs Customer Rating")
         axes[1, 1].set_xlabel("Rating")

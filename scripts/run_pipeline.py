@@ -4,6 +4,9 @@ Runs the entire project end-to-end in one command:
 python scripts/run_pipeline.py
 """
 
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend — save charts without blocking
+
 import sys
 import os
 import time
